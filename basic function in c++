@@ -1,0 +1,65 @@
+#include<bits/stdc++.h>
+using namespace std;
+void printhellow(){
+    cout<<"Abhishek kumar"<<"\n";
+}
+int sum(int a,int b){
+    int sum=0;
+    sum=a+b;
+    return sum;
+}
+int digit_sum(int n){
+    int k1=0;
+    while(n){
+    //   int  k1=0;
+     k1=k1+n%10;
+        n=n/10;
+        // return k1;
+    }
+    return k1;
+}
+void reverse(int p){
+    int p1=0;
+    while(p){
+        int u=p%10;
+        p1=u+p1*10;
+        p=p/10;
+    }
+    cout<<p1<<endl;
+}
+void increment(int &j){
+    j++;
+}
+void sum1(int &a,int &b){
+    cout<<a+b<<endl;
+}
+void func(string &r){
+    string s="";
+}
+int main(){
+    printhellow();
+   int k= sum(10,11);
+
+    cout<<k<<endl;
+    int m;
+    cin>>m;
+   int l= digit_sum(m);
+    cout<<"\n"<<l<<endl;
+    int n4;
+    cin>>n4;
+    reverse(n4);
+    // cout<<reverse(n4)<<endl
+    int j=90;
+    cout<<j<<endl;
+    increment(j);
+    cout<<j<<endl;
+    int g,h;
+    cin>>g>>h;
+    sum1(g,h);
+//   int klop= sum1(g,h);
+    // cout<<klop;eklavya
+    string j1="eklavypandey";
+    func(j1);
+    cout<<j1<<endl;
+    
+}
